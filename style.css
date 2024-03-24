@@ -1,0 +1,456 @@
+/* general */
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+}
+
+.width-wrapper {
+  width: 1440px;
+  margin: 0 auto;
+}
+
+/* header */
+
+header {
+  background: rgb(12, 12, 14);
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+h1 {
+  color: rgb(255, 255, 255);
+  font-family: Forum;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 50px;
+  letter-spacing: 2%;
+  margin-right: auto;
+}
+
+header a {
+  color: rgb(255, 255, 255);
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 50px;
+  letter-spacing: 0%;
+}
+
+nav {
+  display: flex;
+  gap: 30px;
+  margin-right: 40px;
+}
+
+/* hero */
+
+.hero {
+  height: 600px;
+  background-image: url("./img/welcome-background.png");
+  display: flex;
+  align-items: center;
+}
+
+.hero h2 {
+  color: rgb(255, 255, 255);
+  font-family: Forum;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 50px;
+  letter-spacing: 3px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 35px 40px;
+}
+
+.hero div {
+  width: 600px;
+  height: 220px;
+  background: rgb(12, 12, 14);
+  margin-top: 60px;
+}
+
+/* about */
+
+.about {
+  margin: 20px 20px 0;
+}
+
+.about h2 {
+  color: rgb(12, 12, 14);
+  font-family: Forum;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 2px;
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: 60px;
+}
+
+.about p {
+  color: rgb(0, 0, 0);
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.about div {
+  display: flex;
+  gap: 25px;
+  margin-top: 20px;
+}
+
+/* favorites */
+
+.favorites {
+  margin: 20px 20px 0;
+}
+
+.favorites h2 {
+  color: rgb(12, 12, 14);
+  font-family: Forum;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 2px;
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: 60px;
+}
+
+.favorites ul {
+  width: 550px;
+  height: 555px;
+  box-sizing: border-box;
+  border: 1px solid rgb(0, 0, 0);
+  padding: 15px 175px 15px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+}
+
+.card-info {
+  color: rgb(0, 0, 0);
+  font-family: Forum;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 2px;
+  text-align: left;
+  text-transform: capitalize;
+}
+
+.card-name {
+  color: rgb(0, 0, 0);
+  font-family: Inter;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 1.9px;
+  text-align: left;
+}
+
+.card-name span {
+  text-transform: uppercase;
+  display: block;
+}
+
+.card-about {
+  color: rgb(0, 0, 0);
+  font-family: Inter;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 2px;
+  text-align: left;
+  text-transform: capitalize;
+}
+
+.card-button button {
+  width: 75px;
+  height: 30px;
+  box-sizing: border-box;
+  border: 1px solid rgb(12, 12, 14);
+  border-radius: 2px;
+  background-color: white;
+  color: rgb(12, 12, 14);
+  font-family: Inter;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 12px;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.card-button.active button {
+  color: rgb(187, 148, 95);
+  border-color: rgb(187, 148, 95);
+}
+
+.card-button {
+  margin-top: auto;
+}
+
+.card-img {
+  position: absolute;
+  bottom: 0;
+  right: -40px;
+}
+
+.card-img img {
+  display: block;
+}
+
+.favorites div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px 260px;
+}
+
+/* coffee shop */
+
+.coffee-shop {
+  margin: 60px 20px 0;
+}
+
+.coffee-shop h2 {
+  color: rgb(12, 12, 14);
+  font-family: Forum;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 2px;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.coffee-shop p {
+  color: rgb(0, 0, 0);
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 2px;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.coffee-shop h3 {
+  color: rgb(187, 148, 95);
+  font-family: Forum;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+}
+
+.coffee-tea,
+.desserts-cakes {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.menu-name-item {
+  color: rgb(0, 0, 0);
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+}
+
+.menu-line-item {
+  width: 100px;
+  height: 1px;
+  background-color: rgb(187, 148, 95);
+}
+
+.menu-price-item {
+  color: rgb(0, 0, 0);
+  font-family: Forum;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+}
+
+.coffee-tea ul,
+.desserts-cakes ul {
+  display: flex;
+  gap: 60px;
+  align-items: center;
+}
+
+.coffee-shop div {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.coffee-tea {
+  width: 445px;
+}
+
+.coffee-tea .menu-name-item {
+  margin-right: auto;
+}
+
+.desserts-cakes {
+  text-align: right;
+}
+
+.desserts-cakes ul {
+  justify-content: flex-end;
+}
+
+/* out countacts */
+
+.contacts {
+  margin: 60px 20px 0;
+}
+
+.contacts h2 {
+  color: rgb(12, 12, 14);
+  font-family: Forum;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 2px;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.contacts-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+}
+
+.contacts h3 {
+  color: rgb(0, 0, 0);
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 2px;
+  text-align: left;
+  text-transform: capitalize;
+}
+
+.contacts-wrapper div ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contacts ul li {
+  color: rgb(0, 0, 0);
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+}
+
+.contacts a {
+  color: black;
+}
+
+.senior-staff {
+  margin-top: 40px;
+}
+
+.phones-heading {
+  margin-bottom: 20px;
+}
+
+/* footer */
+
+footer {
+  padding: 20px 20px 44px;
+  margin-top: 40px;
+  background-color: black;
+}
+
+.contacts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: rgb(255, 255, 255);
+  font-family: Inter;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.contacts-list ul {
+  display: flex;
+  gap: 20px;
+}
+
+.schedule-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: rgb(255, 255, 255);
+  font-family: Inter;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: right;
+}
+
+.upper-footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 30px;
+  border-bottom: 1px solid white;
+}
+
+.author-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 45px;
+  color: rgb(255, 255, 255);
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 2px;
+  text-align: center;
+}
